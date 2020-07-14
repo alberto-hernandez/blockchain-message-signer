@@ -1,18 +1,18 @@
-package com.ah.blockchain.msg.signer.test;
+package com.github.ah.blockchain.msg.signer.test;
 
-import com.ah.blockchain.msg.signer.MessageSigner;
-import com.ah.blockchain.msg.signer.eip155.MessageValidatorImpl;
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
-import com.ah.blockchain.msg.signer.MessageValidator;
-import com.ah.blockchain.msg.signer.eip155.MessageSignerImpl;
+import com.github.ah.blockchain.msg.signer.MessageSigner;
+import com.github.ah.blockchain.msg.signer.eip155.MessageValidatorImpl;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.MessageValidator;
+import com.github.ah.blockchain.msg.signer.eip155.MessageSignerImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.web3j.crypto.*;
 
 /**
- * @Author: ahernandez
- * @Date: 7/7/20
+ * @author: Alberto Hernández
+ * @date: 7/7/20
  */
 class MessageValidatorTest
 {

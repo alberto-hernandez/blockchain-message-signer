@@ -1,6 +1,6 @@
-package com.ah.blockchain.msg.signer.test;
+package com.github.ah.blockchain.msg.signer.test;
 
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
 import org.web3j.crypto.Sign;
 import org.web3j.rlp.RlpList;
 import org.web3j.rlp.RlpString;
@@ -11,10 +11,11 @@ import org.web3j.utils.Numeric;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
- * @Author: ahernandez
- * @Date: 9/7/20
+ * @author: Alberto Hernández
+ * @date: 9/7/20
  */
 public class TestFactory
 {
@@ -39,9 +40,11 @@ public class TestFactory
 				byte[] data = Numeric.hexStringToByteArray("");
 				result.add(RlpString.create(data));
 
-				result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getV())));
-				result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getR())));
-				result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getS())));
+				if (signatureData != null) {
+					result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getV())));
+					result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getR())));
+					result.add(RlpString.create(Bytes.trimLeadingZeroes(signatureData.getS())));
+				}
 
 				return new RlpList(result);
 			}

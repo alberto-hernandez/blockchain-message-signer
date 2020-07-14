@@ -1,15 +1,15 @@
-package com.ah.blockchain.msg.signer.eip155;
+package com.github.ah.blockchain.msg.signer.eip155;
 
-import com.ah.blockchain.msg.signer.MessageSigner;
-import com.ah.blockchain.msg.signer.helper.MessageHelper;
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.MessageSigner;
+import com.github.ah.blockchain.msg.signer.helper.MessageHelper;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
 import org.web3j.crypto.Credentials;
 import org.web3j.crypto.Sign;
 import org.web3j.crypto.TransactionEncoder;
 
 /**
- * @Author: ahernandez
- * @Date: 6/7/20
+ * @author: Alberto Hernández
+ * @date: 6/7/20
  */
 public class MessageSignerImpl implements MessageSigner
 {

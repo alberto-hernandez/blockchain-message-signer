@@ -1,8 +1,8 @@
-package com.ah.blockchain.msg.signer.eip155;
+package com.github.ah.blockchain.msg.signer.eip155;
 
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
-import com.ah.blockchain.msg.signer.MessageValidator;
-import com.ah.blockchain.msg.signer.helper.MessageHelper;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.MessageValidator;
+import com.github.ah.blockchain.msg.signer.helper.MessageHelper;
 import org.web3j.crypto.Hash;
 import org.web3j.crypto.Keys;
 import org.web3j.crypto.Sign;
@@ -11,8 +11,8 @@ import org.web3j.utils.Numeric;
 import java.math.BigInteger;
 
 /**
- * @Author: ahernandez
- * @Date: 8/7/20
+ * @author: Alberto Hernández
+ * @date: 8/7/20
  */
 public class MessageValidatorImpl implements MessageValidator
 {

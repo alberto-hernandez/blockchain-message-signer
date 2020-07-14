@@ -1,15 +1,16 @@
-package com.ah.blockchain.msg.signer.helper;
+package com.github.ah.blockchain.msg.signer.helper;
 
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
 import org.web3j.crypto.Sign;
 import org.web3j.rlp.RlpEncoder;
 import org.web3j.rlp.RlpList;
 
 import java.nio.ByteBuffer;
+import java.util.Optional;
 
 /**
- * @Author: ahernandez
- * @Date: 8/7/20
+ * @author: Alberto Hernández
+ * @date: 8/7/20
  */
 public class MessageHelper
 {

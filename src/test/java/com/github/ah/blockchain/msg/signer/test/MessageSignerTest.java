@@ -1,8 +1,8 @@
-package com.ah.blockchain.msg.signer.test;
+package com.github.ah.blockchain.msg.signer.test;
 
-import com.ah.blockchain.msg.signer.MessageSigner;
-import com.ah.blockchain.msg.signer.rlp.RlpSerialized;
-import com.ah.blockchain.msg.signer.eip155.MessageSignerImpl;
+import com.github.ah.blockchain.msg.signer.MessageSigner;
+import com.github.ah.blockchain.msg.signer.rlp.RlpSerialized;
+import com.github.ah.blockchain.msg.signer.eip155.MessageSignerImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -12,9 +12,11 @@ import org.web3j.rlp.RlpEncoder;
 import org.web3j.rlp.RlpList;
 import org.web3j.utils.Numeric;
 
+import java.util.Optional;
+
 /**
- * @Author: ahernandez
- * @Date: 7/7/20
+ * @author: Alberto Hernández
+ * @date: 7/7/20
  */
 class MessageSignerTest
 {
